@@ -28,7 +28,7 @@ def add_numbers_post():
 	  elif request.method == 'POST':
   	      print(request.form['text'].split())
 		suma_total = 0
-		resta_total = 0
+		
 		
   	      try:
   	      	for str_num in request.form['text'].split():
@@ -37,7 +37,18 @@ def add_numbers_post():
   	      	return render_template('add_numbers.html', result_suma=str(suma_total))
 	
   	      except ValueError:
-  	      	return "Easy now! Let's keep it simple! 2 numbers with a space between them please"
+  	      	return "Easy now! Let's keep it simple! 2 numbers with a space between them please"								
+              
+	      try:
+		resta_total = 0
+  	      	for str_num in request.form['text'].split():
+  	      		suma_total -= int(str_num)
+			
+  	      	return render_template('add_numbers.html', result_resta=str(resta_total))
+	
+  	      except ValueError:
+  	      	return "Easy now! Let's keep it simple! 2 numbers with a space between them please"	
+		
 
 
 @app.route('/shopping_list', methods=['GET','POST'])
