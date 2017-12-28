@@ -27,7 +27,8 @@ def add_numbers_post():
 	
 	  elif request.method == 'POST':
   	      print(request.form['text'].split())
-  	      suma_total = 0
+		suma_total = 0
+		resta_total = 0
 		
   	      try:
   	      	for str_num in request.form['text'].split():
