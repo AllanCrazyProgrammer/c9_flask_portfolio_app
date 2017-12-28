@@ -33,7 +33,7 @@ def add_numbers_post():
   	      		suma_total += int(str_num)
 			resta_total -= int(str_sum)
   	      	return render_template('add_numbers.html', result_suma=str(suma_total))
-		return render_template('add_numbers.html', result_resta=str(resta_total))
+		#return render_template('add_numbers.html', result_resta=str(resta_total))
   	      except ValueError:
   	      	return "Easy now! Let's keep it simple! 2 numbers with a space between them please"
 
