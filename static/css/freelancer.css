@@ -67,12 +67,9 @@ hr.star-primary:after {
   margin: 0 auto;
 }
 header {
-text-align: center;
-color: #fff;
-background: #18bc9c;
-background-size: cover;
-background-image: url('https://farm3.staticflickr.com/2824/11853317786_aa636f15a0_c.jpg');
-}
+  text-align: center;
+  background: #18BC9C;
+  color: white;
 }
 header .container {
   padding-top: 100px;
